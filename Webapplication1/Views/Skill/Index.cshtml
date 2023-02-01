@@ -1,0 +1,14 @@
+﻿@model List<Skill>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@foreach (Skill skills in Model)
+{
+    <p>@skills.Name<a href="Skill/ShowSkill/@skills.Id">Show Skill</a></p>
+
+}
+<h1>ADD SKILL</h1>
+<a href="/Skill/CreateSkill">Add Skill</a>
